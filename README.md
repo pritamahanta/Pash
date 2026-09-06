@@ -1,4 +1,4 @@
-# Psh — A Unix Shell in C
+# Pash — A Unix Shell in C
 
 A fully functional Unix shell built from scratch in C, implementing process
 management, job control, pipelines, signal handling, and persistent command history.
@@ -28,8 +28,8 @@ management, job control, pipelines, signal handling, and persistent command hist
 ### Build
 
 ```bash
-git clone https://github.com/perxeusss/Psh-shell.git
-cd Psh-shell
+git clone https://github.com/pritamahanta/Pash.git
+cd Pash
 make
 ```
 
@@ -126,7 +126,7 @@ replaced with `~` — matching real shell behavior.
 
 ### External Commands
 
-Psh can run any binary available on your system `PATH`:
+Pash can run any binary available on your system `PATH`:
 
 ```bash
 perxeuss@hostname:~$ ls -la
@@ -368,7 +368,7 @@ perxeuss@hostname:~/projects$
 
 ### Command History
 
-Psh saves every command to `~/.Psh_history` and loads it on startup.
+Pash saves every command to `~/.Psh_history` and loads it on startup.
 
 **Features:**
 
@@ -442,7 +442,7 @@ are available in [docs/internals.md](docs/internals.md).
 ## Project Structure
 
 ```
-Psh-shell/
+Pash/
 ├── src/
 │   ├── main.c          # Shell loop, initialization
 │   ├── execute.c       # fork/exec, pipelines, redirection

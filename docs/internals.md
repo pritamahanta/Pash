@@ -1,10 +1,10 @@
-# Psh Shell — Internals
+# Pash Shell — Internals
 
-Detailed architecture and implementation notes for Psh, a Unix shell built from scratch in C.
+Detailed architecture and implementation notes for Pash, a Unix shell built from scratch in C.
 
 ## Technical Overview
 
-Psh implements a fully functional command-line shell with the following capabilities:
+Pash implements a fully functional command-line shell with the following capabilities:
 
 - **Command parsing and execution** using a recursive descent parser
 - **Process management** with `fork`/`exec`, process groups, and job control
@@ -92,7 +92,7 @@ Persistent command history system:
 ### Code Organization
 
 ```
-Psh-shell/
+Pash/
 ├── include/
 │   ├── shell.h         # Core data structures (shell_state, bg_job)
 │   ├── parser.h        # Parser interface
